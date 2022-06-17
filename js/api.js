@@ -14,7 +14,7 @@ class API {
     fetch(url)
       .then((respuesta) => respuesta.json())
       .then((datos) => {
-        if (UI.divResultado.lyrics) {
+        if (datos.lyrics) {
           const { lyrics } = datos;
           UI.divResultado.textContent = lyrics;
           UI.headingResultado.textContent = `Letra de la cancion: ${this.cancion} de ${this.artista}`;

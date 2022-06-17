@@ -21,8 +21,8 @@ function buscarCancion(e) {
     }, 3000);
 
     return;
+  } else {
+    //consultar API
+    new API(artista, cancion);
   }
-
-  //consultar API
-  const busqueda = new API(artista, cancion);
 }
